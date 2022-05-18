@@ -6,10 +6,16 @@ import { Link } from 'react-router-dom';
 
 const HomePageView = () => {
   return (
-    <div>
-      <h6>Final Project</h6>
-      <Link to={'/instructors'} > All Instructors </Link>
-      <Link to={'/courses'} > All Courses </Link>
+    <div className='home-page-container'>
+      <span className='home-title'>
+        <h1>CUNYFirst Clone</h1>
+      </span>
+      
+      <div className='main-container'>
+        <Link to={'/instructors'} className="link-button" id="instructor-link"> View Instructors </Link>
+        <Link to={'/courses'} className="link-button" id="course-link"> View Courses </Link>
+      </div>
+      
       
     </div>
   );    
