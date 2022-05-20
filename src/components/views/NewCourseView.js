@@ -1,6 +1,3 @@
-
-
-
 const NewCourseView = (props) => {
   const {handleChange, handleSubmit } = props;
 

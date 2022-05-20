@@ -1,7 +1,16 @@
+.header {
+    background-color: purple;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+}
+
 .home-page-container {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 85vh;
     width: 100vw;
 }
 
@@ -18,12 +27,12 @@
     align-items: center;
     justify-content: center;
     height: 100%;
+    width: 100%;
 }
 
 .link-button {
     padding: 2rem;
     margin: 5rem;
-    
     color: white;
     text-decoration: none;
     background-color: purple;
@@ -31,6 +40,10 @@
     font-size: 20px;
 }
 
+.link-button:active {
+    transform: translateY(4px);
+    border-radius: 20px;
+} 
 #instructor-link {
     
 }
@@ -39,3 +52,20 @@
     
 }
 
+.footer {
+    background-color: purple;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    bottom: 0px;
+    position: absolute;
+}
+
+.home-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}

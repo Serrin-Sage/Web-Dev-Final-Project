@@ -1,3 +1,4 @@
+import { instructor } from '../reducers';
 import * as at from './actionTypes';
 
 // ACTION CREATORS;
@@ -18,6 +19,22 @@ export const fetchInstructor = (instructor) => {
   return {
     type: at.FETCH_INSTRUCTOR,
     payload: instructor,
+  };
+};
+
+//Add instructor 
+export const addInstructor = (instructor) => {
+  return {
+    type: at.ADD_INSTRUCTOR,
+    payload: instructor,
+  };
+};
+
+//Delete Instructor
+export const deleteInstructor = (instructorId) => {
+  return {
+    type: at.DELETE_INSTRUCTOR,
+    payload: instructorId,
   };
 };
 
