@@ -5,6 +5,7 @@ import './style-sheets/home-page.css'
 import './style-sheets/instructor-style.css'
 import './style-sheets/button-style.css'
 import './style-sheets/course-style.css'
+import './style-sheets/form-style.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
