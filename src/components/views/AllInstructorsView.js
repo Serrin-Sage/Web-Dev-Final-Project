@@ -6,9 +6,9 @@ const AllInstructorsView = (props) => {
   if (!props.allInstructors.length) {
     return (
     <div>
-      <p>There are no instructors.</p>
+      <p className="no-content-message">There are no instructors.</p>
         <Link to={`/newinstructor`}>
-          <button>Add New Instructor</button>
+          <button className="add-new-button">Add New Instructor</button>
         </Link>
     </div>
     )
@@ -25,7 +25,7 @@ const AllInstructorsView = (props) => {
               <Link to={`/instructor/${instructor.id}`} className="instructor-link">
                 <h1 className="instructor-name">{name}</h1>
               </Link>
-              <p>{instructor.department}</p>
+              <p className="instructor-dept">{instructor.department}</p>
               <button onClick={() => deleteInstructor(instructor.id)} className="delete-button">Delete</button>
             </div>
           </div>
