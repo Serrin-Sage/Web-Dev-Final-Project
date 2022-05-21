@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './style-sheets/home-page.css'
 import './style-sheets/instructor-style.css'
+import './style-sheets/button-style.css'
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

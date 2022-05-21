@@ -22,18 +22,18 @@ const AllInstructorsView = (props) => {
         return (
           <div className="instructor-list">
             <div key={instructor.id} className="instructor-item">
-              <Link to={`/instructor/${instructor.id}`}>
-                <h1>{name}</h1>
+              <Link to={`/instructor/${instructor.id}`} className="instructor-link">
+                <h1 className="instructor-name">{name}</h1>
               </Link>
               <p>{instructor.department}</p>
-              <button onClick={() => deleteInstructor(instructor.id)}>Delete</button>
+              <button onClick={() => deleteInstructor(instructor.id)} className="delete-button">Delete</button>
             </div>
           </div>
         );
       })}
       </div>
       <Link to={`/newinstructor`}>
-        <button>Add New Instructor</button>
+        <button className="add-new-button">Add New Instructor</button>
       </Link>
     </div>
   );

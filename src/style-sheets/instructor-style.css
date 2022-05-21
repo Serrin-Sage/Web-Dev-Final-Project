@@ -9,16 +9,41 @@
 .instructor-container-row {
     display: flex;
     flex-direction: row;
-    margin: 1rem;
-    max-width: 800px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .instructor-list {
     text-align: center;
     margin: 2rem;
-    padding: 1rem;
-    max-width: 200px;
-    min-width: 200px;
-    border: solid 2px black;
-    
+    max-width: 220px;
+    min-width: 220px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.instructor-item {
+    padding-bottom: 1rem;
+}
+
+.instructor-link {
+    text-decoration: none;
+}
+.instructor-name {
+    color: rgb(255, 255, 255);
+    background-color: #1d3a83;
+    font-size: 25px;
+    height: fit-content;
+    padding: 2px;
+    transform: translateY(-22px);
+    border-radius: 4px 4px 0px 0px;
+}
+
+.instructor-name:hover {
+    color: #ffb81c;
 }

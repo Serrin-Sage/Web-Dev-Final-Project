@@ -1,0 +1,35 @@
+.delete-button {
+    background-color: rgb(255, 59, 59);
+    border: none;
+    height: 30px;
+    width: 65px;
+    margin-top: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: rgb(134, 0, 0);
+    color: white;
+}
+
+.delete-button:active {
+    transform: translateY(4px);
+}
+
+.add-new-button {
+    border: none;
+    height: fit-content;
+    width: 80px;
+    padding: 0.5rem;
+    margin-top: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    background-color: #1d3a83;
+    color: white;
+    cursor: pointer;
+}
+
+.add-new-button:hover {
+    border: solid 1px #ffb81c;
+}
