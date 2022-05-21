@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { fetchInstructorThunk } from "../../store/thunks";
-
 import { InstructorView } from "../views";
 
 class InstructorContainer extends Component {

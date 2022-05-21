@@ -1,4 +1,3 @@
-import { instructor } from '../reducers';
 import * as at from './actionTypes';
 
 // ACTION CREATORS;

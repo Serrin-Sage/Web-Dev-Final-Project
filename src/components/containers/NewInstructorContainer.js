@@ -10,9 +10,9 @@ class NewInstructorContainer extends Component {
     constructor(props){
         super(props);
         this.state = {
-          title: "", 
-          timeslot: "",
-          location: "", 
+          firstname: "", 
+          lastname: "",
+          department: "", 
           instructorId: null, 
           redirect: false, 
           redirectId: null
@@ -28,22 +28,22 @@ class NewInstructorContainer extends Component {
     handleSubmit = async event => {
         event.preventDefault();
 
-        let course = {
-            title: this.state.title,
-            timeslot: this.state.timeslot,
-            location: this.state.location,
+        let instructor = {
+            firstname: this.state.firstname,
+            lastname: this.state.lastname,
+            department: this.state.department,
             instructorId: this.state.instructorId
         };
         
-        let newCourse = await this.props.addCourse(course);
+        let newInstructor = await this.props.addInstructor(instructor);
 
         this.setState({
-          title: this.state.title,
-          timeslot: this.state.timeslot,
-          location: this.state.location,
-          instructorId: null, 
+          firstname: this.state.firstname,
+          lastname: this.state.lastname,
+          department: this.state.department,
+          instructorId: this.state.instructorId, 
           redirect: true, 
-          redirectId: newCourse.id
+          redirectId: newInstructor.id
         });
     }
 
@@ -52,9 +52,9 @@ class NewInstructorContainer extends Component {
     }
 
     render() {
-      //go to single course view of newly created course
+      
         if(this.state.redirect) {
-          return (<Redirect to={`/course/${this.state.redirectId}`}/>)
+          return (<Redirect to={`/instructor/${this.state.redirectId}`}/>)
         }
         return (
           <NewInstructorView 
@@ -67,7 +67,7 @@ class NewInstructorContainer extends Component {
 
 const mapDispatch = (dispatch) => {
     return({
-        addCourse: (course) => dispatch(addInstructorThunk(course)),
+        addInstructor: (instructor) => dispatch(addInstructorThunk(instructor)),
     })
 }
 
