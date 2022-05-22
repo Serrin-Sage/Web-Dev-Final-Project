@@ -22,7 +22,7 @@ const NewCourseView = (props) => {
           <br/>
           <br/>
 
-          <label style={{color:'#11153e', fontWeight: 'bold'}}>instructorId: </label>
+          <label style={{color:'#11153e', fontWeight: 'bold'}}>Instructor Id: </label>
           <input type="text" name="instructorId" onChange={(e) => handleChange(e)} />
           <br/>
           <br/>

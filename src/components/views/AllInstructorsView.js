@@ -33,9 +33,14 @@ const AllInstructorsView = (props) => {
         );
       })}
       </div>
-      <Link to={`/newinstructor`}>
-        <button className="add-new-button">Add New Instructor</button>
-      </Link>
+      <div className="links-to-return">
+          <Link to={`/newcourse`}>
+            <button className="go-back-button">Add New Course</button>
+          </Link>
+          <Link to={`/newinstructor`}>
+            <button className="add-new-button">Add New Instructor</button>
+          </Link>
+        </div>
     </div>
   );
 };

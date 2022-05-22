@@ -33,6 +33,11 @@
 
 .instructor-link {
     text-decoration: none;
+    color: black;
+}
+
+.instructor-link:hover {
+    color: #1d3a83;
 }
 
 .instructor-name {
@@ -90,7 +95,7 @@
 .indv-department {
     font-weight: bold;
     font-size: 28px;
-    transform: translateY(-20px);
+    transform: translateY(-21px);
 }
 
 .ins-course-title {
@@ -103,7 +108,8 @@
 }
 
 .ordered-list ul {
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
         margin: 0;
         padding: 0;
         /* For IE, the outcast */
