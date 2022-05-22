@@ -33,3 +33,10 @@
 input {
     
 }
+
+.links-to-return {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 250px;
+}

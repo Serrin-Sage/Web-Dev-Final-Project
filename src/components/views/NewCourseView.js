@@ -35,10 +35,16 @@ const NewCourseView = (props) => {
         </form>
         </div>
         <br/>
-          <br/>
+        <br/>
+        <div className="links-to-return">
           <Link to={`/courses`}>
+            <button className="go-back-button">Back To Courses</button>
+          </Link>
+          <Link to={`/instructors`}>
             <button className="go-back-button">Back To Instructors</button>
           </Link>
+        </div>
+          
       </div>
     
   )
